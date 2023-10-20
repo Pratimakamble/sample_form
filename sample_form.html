@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="author" content="prtima">
+        <meta name="description" content="sample form">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>sample form</title>
+
+    </head>
+    <body bgcolor="sky blue">
+        <form>
+        <div>
+            <lable for="ag">Age</lable>
+            <input id="ag" type="number" name="age">
+        <div>
+
+                <lable for="sq">share quantity</lable>
+                <input id="sq" type="number" name="sxhareqty" min="50" max="100" step="5"
+            </div>
+            <div>
+                <lable>select your hobbies</lable>
+            <div>
+                    <input type="checkbox" name="hobbies" id="hb1" value="dancing">
+                    <lable for="hb1">dancing</lable> 
+                </div>
+                <div>
+                    <input type="checkbox" name="hobbies" id="hb2" value="sining">
+                    <lable for="hb2">sining</lable> 
+                </div>
+                <div>
+                    <input type="checkbox" name="hobbies" id="hb3" value="travlling">
+                    <lable for="hb3">travlling</lable> 
+                </div>
+            </div>
+            <div>
+                <lable>select gender</lable>
+                <div>
+                    <input type="radio" name="gender" id="g1" value="male">
+                    <lable for="g1">male</lable>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="g2" value="female">
+                    <lable for="g2">female</lable>
+                </div>
+                <div>
+                    <lable>Question 1: if x<sup>2</sup>=4, then what is value of x? </lable>
+                    <div>
+                        <input type="radio" id="qu1op1" name="q1" value="2"
+                        <lable for="qu1op1">1</lable>
+                    </div>
+                    <div>
+                        <input type="radio" id="qu1op2" name="q1" value="2"
+                        <lable for="qu1op1">2</lable>
+                    </div>
+                    <div>
+                        <input type="radio" id="qu1op3" name="q1" value="2"
+                        <lable for="qu1op1">3</lable>
+                    </div>
+                    <div>
+                        <input type="radio" id="qu1op4" name="q1" value="2"
+                        <lable for="qu1op1">4</lable>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <lable for="bd">My birth Date</lable>
+                <input id="bd" type="date" name="birthdate">
+            </div>
+            <div>
+                <lable for="bd">select date between 1-1-2000 and 31-12-2018</lable>
+                <input id="bd" type="date" name="prodate_date" min="2000-01-01" max="2018-12-3">
+            </div>
+            <div>
+                <lable for="fdt">flight departure time</lable>
+                <input id="fdt" type="time" name="flightdeparture">
+            </div>
+            <div>
+                <lable for="fat">flight arrival time</lable>
+                <input id="fat" type="time" name="flightarrival">
+            </div>
+            <div>
+                <lable for="tddt">train departure date and time</lable>
+                <input id="tddt" type="datetime-local" name="trainArrivalDtime">
+            </div>
+            <div>
+                <lable for="wy">select week year</lable>
+                <input id="wy" type="week" name="weekyear"
+            </div>
+            <div>
+                <lable for="my">slect credit card expiry month and year</lable>
+                <input id="my" type="month" name="creaditcardExpiry">
+            </div>
+            <div>
+                <lable for="eml">enter the email address</lable>
+                <input type="email" id="eml" name="emailID">
+                
+            </div>
+            <div>
+                <lable for="mbl">enter mobile number</lable>
+                <input id="mbl" type="tel" name="mobileNo" pattern="[0-9]{10}" required>
+            </div>
+            <div>
+            <input type="submit">
+            </div>
+            <div>
+                <label for="clr">select your fev color</label>
+                <input id="clr" type="color" name="fev_color" value="#ff00ff">
+
+            </div>
+            <div>
+                <lable for="cf">select your fev coffee</lable>
+                <input id="cf" list="coffees">
+                <datalist id="coffees">
+                    <option value="ESPRESSO">etalian coffee</option>
+                    <option value="MACHO">mocha</option>
+                     <option value="JAVA">java</option>
+                     <option value="BREW">bru</option>
+                    <option value="NES CAFE">nescafe</option>
+                </datalist>
+            </div>
+            <div>
+                <lable for="f1">select your photo upload</lable>
+                <input id="f1" type="file" name="profile_image">   
+            </div>
+            <div>
+                <label for="ul"> select your profile url</label>
+                <input id="ul" type="url" name="profile_url">    
+            </div>
+            <div>
+                <lable for="sr">search contents:</lable>
+                 <input id="sr" type="search" name="search_content">   
+            </div>
+            <div>
+                <lable for="addr">Address</lable>
+                <textarea name="person_address"> enter your address</textarea>
+            </div>
+            <div>
+                <lable for="sv2">DJ volume(custom range):10 </lable>
+                <input id="sv2" type="range" name="DJ_volume1" min="10" max="70" step="5">
+                <label for="sv2">70</label>
+            </div>
+            <div>
+                <lable for="ph">enter your mobile no</lable>
+                <input id="ph" 
+                type="tel" 
+                name="phone_no" 
+                pattern="[0-9]{10}"
+                maxlength="10"
+                required 
+                placeholder="xxxxxxxxxx">
+
+            </div>
+            <div>
+                <lable for="ql">qualification</lable>
+                <select id="ql">
+                    <option value="BSC">B.Sc</option>
+                    <option value="MSC">M.Sc</option>
+                    <option value="BCA">B.C.A</option>
+                    <option value="BA">B.A</option>
+                    <option value="Bcom">B.Com</option>
+                    <option value="MCA">M.C.A</option>
+                </select>
+            </div>
+            <div>
+                <lable for="ql">qualification</lable>
+                <select id="ql" name="qualification" size="7" multiple>
+                    <option value="BSC">B.Sc</option>
+                    <option value="MSC">M.Sc</option>
+                    <option value="BCA">B.C.A</option>
+                    <option value="BA">B.A</option>
+                    <option value="Bcom">B.Com</option>
+                    <option value="MCA">M.C.A</option>
+                </select>
+                <div>
+                    <input type="submit">
+                    </div>
+            </div>
+            <div>
+                <button type="submit">submit</button>
+                <button type="reset">reset</button>
+            </div>
+            
+
+            </div>
+           
+        </div>
+    </form>
+
+        </body>
+    </body>
+</html>
