@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- this is head section-->
+        <meta charset="ISO-8859"
+        <meta name="description" content="profile_form">
+        <meta name="author" content="pratima">
+        <meta name="viewport" content="width=device-width,intial-scale=1.0">
+        <title>profile_form</title>
+    </head>
+    <body bgcolor="gray">
+        <form>
+            <fieldset>
+                <legend>personal Details</legend>
+                <div>
+                    <lable for="ag">Age</lable>
+                    <input id="ag" type="number" name="age"> 
+                </div>
+                <div>
+                    <lable for="bd">My birth Date</lable>
+                    <input id="bd" type="date" name="birthdate">
+                </div>
+               
+                <div>
+                    <lable>select gender</lable>
+                    <div>
+                        <input type="radio" name="gender" id="g1" value="male">
+                        <lable for="g1">male</lable>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="g2" value="female">
+                        <lable for="g2">female</lable>
+                    </div>
+                    <div>
+                        <lable>select your hobbies</lable>
+                    <div>
+                            <input type="checkbox" name="hobbies" id="hb1" value="dancing">
+                            <lable for="hb1">dancing</lable> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="hobbies" id="hb2" value="sining">
+                            <lable for="hb2">sining</lable> 
+                        </div>
+                        <div>
+                            <input type="checkbox" name="hobbies" id="hb3" value="travlling">
+                            <lable for="hb3">travlling</lable> 
+                        </div>
+                        <div>
+                            <label for="clr">select your fev color</label>
+                            <input id="clr" type="color" name="fev_color" value="#ff00ff">
+            
+                        </div>
+                     </fieldset>
+                     <fieldset>
+                        <legend>Contact Details</legend>
+                        <div>
+                            <lable for="mbl">enter mobile number</lable>
+                            <input id="mbl" type="tel" name="mobileNo" pattern="[0-9]{10}" required>
+                        </div>
+                        <div>
+                            <lable for="eml">enter the email address</lable>
+                            <input type="email" id="eml" name="emailID">
+                            
+                        </div>
+                        <div>
+                            <lable for="addr"> Home Address</lable>
+                            <textarea name="person_address"> enter your address</textarea>
+                        </div>       
+
+                     </fieldset>
+                     <fieldset>
+                        <legend>Educational Details</legend>
+                            <div>
+                            <lable for="ql">qualification</lable>
+                            <select id="ql">
+                                <option value="BSC">B.Sc</option>
+                                <option value="MSC">M.Sc</option>
+                                <option value="BCA">B.C.A</option>
+                                <option value="BA">B.A</option>
+                                <option value="Bcom">B.Com</option>
+                                <option value="MCA">M.C.A</option>
+                            </select>
+                        </div>
+                        <div>
+                            <lable for="ql">qualification</lable>
+                            <select id="ql" name="qualification" size="7" multiple>
+                                <option value="BSC">B.Sc</option>
+                                <option value="MSC">M.Sc</option>
+                                <option value="BCA">B.C.A</option>
+                                <option value="BA">B.A</option>
+                                <option value="Bcom">B.Com</option>
+                                <option value="MCA">M.C.A</option>
+                            </select>
+                            </div>
+                         </fieldset>
+                         <fieldset>
+                            <legend>travlling Details</legend>
+                            <div>
+                                <lable for="fdt">flight departure time</lable>
+                                <input id="fdt" type="time" name="flightdeparture">
+                            </div>
+                            <div>
+                                <lable for="fat">flight arrival time</lable>
+                                <input id="fat" type="time" name="flightarrival">
+                            </div>
+                            <div>
+                                <lable for="tddt">train departure date and time</lable>
+                                <input id="tddt" type="datetime-local" name="trainArrivalDtime">
+                            </div>
+                         </fieldset>
+                         <fieldset>
+                            <legend>Payment Details</legend>
+                            <div>
+                                <lable for="my">slect credit card expiry month and year</lable>
+                                <input id="my" type="month" name="creaditcardExpiry">
+                            </div>
+                         </fieldset>
+                         <fieldset>
+                            <legend>Professionals Details</legend>
+                            <div>
+                                <lable for="f1">select your photo upload</lable>
+                                <input id="f1" type="file" name="profile_image">   
+                            </div>
+                            <div>
+                                <label for="ul"> select your profile url</label>
+                                <input id="ul" type="url" name="profile_url">    
+                            </div>
+                         </fieldset>
+                         <div>
+                            <button type="submit">submit</button>
+                            <button type="reset">reset</button>  
+                         </div>
+        </form>
